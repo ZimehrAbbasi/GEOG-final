@@ -13,6 +13,15 @@ def budyko_gamma(AI, gamma):
     R_P = 1 - f_AI
     return R_P
 
+# def budyko_gamma(P, PET, S, gamma_param):
+#     """
+#     Calculates the Budyko curve using the catchment storage parameter and the gamma function
+#     """
+#     AI = PET / P
+#     f_AI = (1.0 + (S / P) * (AI ** gamma_param)) ** (-1.0 / gamma_param)
+#     return 1.0 - f_AI
+
+
 # Estimate the value of gamma using optimization
 from scipy.optimize import minimize
 
